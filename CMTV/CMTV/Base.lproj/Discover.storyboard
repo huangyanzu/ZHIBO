@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4DM-jb-E7O">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="oZN-m0-wVR">
+            <objects>
+                <viewController id="f5N-ts-gIB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vGr-rd-JCB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Vyx-5T-pWG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0th-CT-87q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbG-bV-lB2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="961"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="aIc-ba-O7z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4DM-jb-E7O" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discover" image="found-n" selectedImage="found-p" id="wPd-er-7fV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K1H-rZ-fSp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f5N-ts-gIB" kind="relationship" relationship="rootViewController" id="idQ-0d-z4L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iF2-if-UDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="961"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="found-n" width="25" height="19"/>
+        <image name="found-p" width="25" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
