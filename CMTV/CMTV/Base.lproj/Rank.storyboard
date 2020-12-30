@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="reT-Ns-GzA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +14,7 @@
             <objects>
                 <viewController id="0NG-4n-SsH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gk2-Pi-EgY">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="JX5-ml-pAY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -26,7 +28,7 @@
         <!--Rank-->
         <scene sceneID="Xhj-id-DN2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="reT-Ns-GzA" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="reT-Ns-GzA" customClass="NavigationViewController" customModule="CMTV" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Rank" image="ranking-n" selectedImage="ranking-p" id="MQR-oP-TQu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AAc-4s-sEt">

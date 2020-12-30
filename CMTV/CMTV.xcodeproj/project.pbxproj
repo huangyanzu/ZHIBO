@@ -15,6 +15,10 @@
 		733659E3259A2F5D00A604B7 /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 733659E1259A2F5D00A604B7 /* Rank.storyboard */; };
 		733659E7259A2F7A00A604B7 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 733659E5259A2F7A00A604B7 /* Discover.storyboard */; };
 		733659EB259A2F9900A604B7 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 733659E9259A2F9900A604B7 /* Profile.storyboard */; };
+		73EAF863259ACD6400E80205 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAF862259ACD6400E80205 /* HomeViewController.swift */; };
+		73EAF866259ACE6A00E80205 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAF865259ACE6A00E80205 /* RankViewController.swift */; };
+		73EAF869259ACF2600E80205 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAF868259ACF2600E80205 /* NavigationViewController.swift */; };
+		73EAF86E259B118F00E80205 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAF86D259B118F00E80205 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		733659E2259A2F5D00A604B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CMTV/Base.lproj/Rank.storyboard; sourceTree = SOURCE_ROOT; };
 		733659E6259A2F7A00A604B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CMTV/Base.lproj/Discover.storyboard; sourceTree = SOURCE_ROOT; };
 		733659EA259A2F9900A604B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CMTV/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		73EAF862259ACD6400E80205 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		73EAF865259ACE6A00E80205 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		73EAF868259ACF2600E80205 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		73EAF86D259B118F00E80205 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,8 @@
 		733659BB259A199200A604B7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				73EAF86C259B116A00E80205 /* Tools */,
+				73EAF86B259B116200E80205 /* Extensions */,
 				733659BC259A199200A604B7 /* Home */,
 				733659C0259A199200A604B7 /* Discover */,
 				733659C4259A199200A604B7 /* Profile */,
@@ -96,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				733659DD259A2F3000A604B7 /* Home.storyboard */,
+				73EAF862259ACD6400E80205 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				733659D9259A2D3000A604B7 /* Main.storyboard */,
+				73EAF868259ACF2600E80205 /* NavigationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				733659E1259A2F5D00A604B7 /* Rank.storyboard */,
+				73EAF865259ACE6A00E80205 /* RankViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,6 +284,21 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		73EAF86B259B116200E80205 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73EAF86D259B118F00E80205 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		73EAF86C259B116A00E80205 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,7 +375,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73EAF869259ACF2600E80205 /* NavigationViewController.swift in Sources */,
 				733659A3259A16BD00A604B7 /* AppDelegate.swift in Sources */,
+				73EAF863259ACD6400E80205 /* HomeViewController.swift in Sources */,
+				73EAF866259ACE6A00E80205 /* RankViewController.swift in Sources */,
+				73EAF86E259B118F00E80205 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +561,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5R4DYQUXA;
 				INFOPLIST_FILE = CMTV/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,7 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5R4DYQUXA;
 				INFOPLIST_FILE = CMTV/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
