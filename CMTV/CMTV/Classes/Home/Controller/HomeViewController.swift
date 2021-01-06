@@ -7,15 +7,47 @@
 
 import UIKit
 
+
+
 class HomeViewController: UIViewController {
+    
+    
+    
+//    lazy var pageView :JCPageView = {
+//
+//        let titles = ["以令人难以","限时购","车的流畅轻","明锐动感","只需一眼","新方案现已上线","就足","车","当轿跑灵遇上"]
+//        let style = JCTitleStyle()
+//
+//        style.titleHeight = 30
+//
+//        style.isScrollEnable = true
+//
+//        style.isShowScrollLine = true
+//
+//        var childVcs = [UIViewController]()
+//        for _ in  0..<titles.count {
+//
+//            let vc = UIViewController()
+//            vc.view.backgroundColor = UIColor.randomColor()
+//            childVcs.append(vc)
+//        }
+//
+//
+//
+//
+//        let pageFrame = CGRect(x: 0, y: 91 , width: view.bounds.width, height: view.bounds.height - 91 )
+//
+//        let pageView = JCPageView(frame: pageFrame, titles: titles, childVcs: childVcs, parentVc: self, style: style)
+//
+//        return pageView
+//
+//    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.randomColor()
         
-       
-        
+    
         setupUI()
     }
     
@@ -28,7 +60,11 @@ extension HomeViewController{
     
     private func setupUI(){
         
-       // setupNavigationBar()
+        view.backgroundColor = UIColor.white
+        
+        setupNavigationBar()
+        
+        setupContentView()
         
     }
     
@@ -60,6 +96,35 @@ extension HomeViewController{
         
     }
     
+    private func setupContentView(){
+        
+        let homeTypes = loadTypesData()
+        
+        let style = JCTitleStyle()
+        style.isScrollEnable = true
+        style.isShowScrollLine = true 
+        let pageFrame = CGRect(x: 0, y: KNavigationHeight + 3  , width: kScreenWidth, height: kScreenHeight -  KNavigationHeight  - KTabBarHeight - 3 )
+        
+        guard let titles = homeTypes.map({ $0.title}) as? [String] else{return}
+        
+        var childVcs = [AnchorViewController]()
+        for type in homeTypes{
+            let anchorVc = AnchorViewController()
+            anchorVc.homeType = type
+            childVcs.append(anchorVc)
+            
+        }
+        
+        let pageView = JCPageView(frame: pageFrame, titles: titles, childVcs: childVcs, parentVc: self, style: style)
+        
+        view.addSubview(pageView)
+        
+        
+        
+        
+    }
+    
+    
 }
 
 
@@ -90,33 +155,22 @@ extension HomeViewController {
         
     }
     
+    private func loadTypesData()-> [HomeType]{
+        
+       guard let path = Bundle.main.path(forResource: "types.plist", ofType: nil),
+             let dataArray = NSArray(contentsOfFile: path) as? [[String:Any]] else
+             { return [] }
+        
+        var tempArray = [HomeType]()
+        
+        for dict in dataArray{
+            tempArray.append(HomeType(dict: dict))
+        }
+        
+        return tempArray
+    }
+    
+    
 }
 
 
-/*
- - (UIView *)findViewWithClassName:(NSString *)className inView:(UIView *)view{
-     Class specificView = NSClassFromString(className);
-     if ([view isKindOfClass:specificView]) {
-         return view;
-     }
-  
-     if (view.subviews.count > 0) {
-         for (UIView *subView in view.subviews) {
-             UIView *targetView = [self findViewWithClassName:className inView:subView];
-             if (targetView != nil) {
-                 return targetView;
-             }
-         }
-     }
-     
-     return nil;
- }
-  
- // 调用方法
-  UITextField *textField = [self findViewWithClassName:@"UITextField" inView:_searchBar];
-
- 
- 
- 
- 
- */

@@ -15,10 +15,21 @@
 		733659E3259A2F5D00A604B7 /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 733659E1259A2F5D00A604B7 /* Rank.storyboard */; };
 		733659E7259A2F7A00A604B7 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 733659E5259A2F7A00A604B7 /* Discover.storyboard */; };
 		733659EB259A2F9900A604B7 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 733659E9259A2F9900A604B7 /* Profile.storyboard */; };
+		73C398EF25A4980E00AC084C /* JCWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C398EE25A4980E00AC084C /* JCWaterfallLayout.swift */; };
+		73C398F625A4985300AC084C /* JCTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C398F225A4985300AC084C /* JCTitleStyle.swift */; };
+		73C398F725A4985300AC084C /* JCPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C398F325A4985300AC084C /* JCPageView.swift */; };
+		73C398F825A4985300AC084C /* JCContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C398F425A4985300AC084C /* JCContentView.swift */; };
+		73C398F925A4985300AC084C /* JCTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C398F525A4985300AC084C /* JCTitleView.swift */; };
+		73C398FD25A4988700AC084C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C398FC25A4988700AC084C /* UIColor+Extension.swift */; };
+		73C3990525A4A2A100AC084C /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73C3990425A4A2A100AC084C /* types.plist */; };
+		73C3990825A4A3FE00AC084C /* HomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3990725A4A3FE00AC084C /* HomeType.swift */; };
+		73C3990B25A4BF0000AC084C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3990A25A4BF0000AC084C /* Common.swift */; };
 		73EAF863259ACD6400E80205 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAF862259ACD6400E80205 /* HomeViewController.swift */; };
 		73EAF866259ACE6A00E80205 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAF865259ACE6A00E80205 /* RankViewController.swift */; };
 		73EAF869259ACF2600E80205 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAF868259ACF2600E80205 /* NavigationViewController.swift */; };
-		73EAF86E259B118F00E80205 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAF86D259B118F00E80205 /* UIColor+Extension.swift */; };
+		73F606E625A558FF0097741A /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F606E525A558FF0097741A /* AnchorViewController.swift */; };
+		73F606E925A5767A0097741A /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F606E825A5767A0097741A /* AnchorModel.swift */; };
+		D73DA4C0E916326DCEDE8F69 /* Pods_CMTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B86AECCF4DABA4F673C39404 /* Pods_CMTV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +43,23 @@
 		733659E2259A2F5D00A604B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CMTV/Base.lproj/Rank.storyboard; sourceTree = SOURCE_ROOT; };
 		733659E6259A2F7A00A604B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CMTV/Base.lproj/Discover.storyboard; sourceTree = SOURCE_ROOT; };
 		733659EA259A2F9900A604B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CMTV/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		73C398EE25A4980E00AC084C /* JCWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCWaterfallLayout.swift; sourceTree = "<group>"; };
+		73C398F225A4985300AC084C /* JCTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCTitleStyle.swift; sourceTree = "<group>"; };
+		73C398F325A4985300AC084C /* JCPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCPageView.swift; sourceTree = "<group>"; };
+		73C398F425A4985300AC084C /* JCContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCContentView.swift; sourceTree = "<group>"; };
+		73C398F525A4985300AC084C /* JCTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCTitleView.swift; sourceTree = "<group>"; };
+		73C398FC25A4988700AC084C /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		73C3990425A4A2A100AC084C /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		73C3990725A4A3FE00AC084C /* HomeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeType.swift; sourceTree = "<group>"; };
+		73C3990A25A4BF0000AC084C /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		73EAF862259ACD6400E80205 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73EAF865259ACE6A00E80205 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
 		73EAF868259ACF2600E80205 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
-		73EAF86D259B118F00E80205 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		73F606E525A558FF0097741A /* AnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
+		73F606E825A5767A0097741A /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		B86AECCF4DABA4F673C39404 /* Pods_CMTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2E90A87E7D0CB54C677D8D /* Pods-CMTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMTV.debug.xcconfig"; path = "Target Support Files/Pods-CMTV/Pods-CMTV.debug.xcconfig"; sourceTree = "<group>"; };
+		F8A1930553F839B02F5B1DBD /* Pods-CMTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMTV.release.xcconfig"; path = "Target Support Files/Pods-CMTV/Pods-CMTV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +67,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73DA4C0E916326DCEDE8F69 /* Pods_CMTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12AF35D3625B84CE86FD39E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA2E90A87E7D0CB54C677D8D /* Pods-CMTV.debug.xcconfig */,
+				F8A1930553F839B02F5B1DBD /* Pods-CMTV.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		73365996259A16BC00A604B7 = {
 			isa = PBXGroup;
 			children = (
 				733659A1259A16BD00A604B7 /* CMTV */,
 				733659A0259A16BD00A604B7 /* Products */,
+				12AF35D3625B84CE86FD39E2 /* Pods */,
+				E5BEF0A106C4B7CD441870E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +105,7 @@
 		733659A1259A16BD00A604B7 /* CMTV */ = {
 			isa = PBXGroup;
 			children = (
+				73C3990325A4A2A100AC084C /* Resource */,
 				733659BB259A199200A604B7 /* Classes */,
 				733659A2259A16BD00A604B7 /* AppDelegate.swift */,
 				733659AB259A16BE00A604B7 /* Assets.xcassets */,
@@ -107,6 +145,7 @@
 			children = (
 				733659DD259A2F3000A604B7 /* Home.storyboard */,
 				73EAF862259ACD6400E80205 /* HomeViewController.swift */,
+				73F606E525A558FF0097741A /* AnchorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -114,6 +153,8 @@
 		733659BE259A199200A604B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				73F606E825A5767A0097741A /* AnchorModel.swift */,
+				73C3990725A4A3FE00AC084C /* HomeType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -268,6 +309,7 @@
 		733659D1259A199200A604B7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				73C398EE25A4980E00AC084C /* JCWaterfallLayout.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,14 +324,34 @@
 		733659D3259A199200A604B7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				73C398F125A4985300AC084C /* JCPageView */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		73C398F125A4985300AC084C /* JCPageView */ = {
+			isa = PBXGroup;
+			children = (
+				73C398F225A4985300AC084C /* JCTitleStyle.swift */,
+				73C398F325A4985300AC084C /* JCPageView.swift */,
+				73C398F425A4985300AC084C /* JCContentView.swift */,
+				73C398F525A4985300AC084C /* JCTitleView.swift */,
+			);
+			path = JCPageView;
+			sourceTree = "<group>";
+		};
+		73C3990325A4A2A100AC084C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				73C3990425A4A2A100AC084C /* types.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		73EAF86B259B116200E80205 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				73EAF86D259B118F00E80205 /* UIColor+Extension.swift */,
+				73C398FC25A4988700AC084C /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,8 +359,17 @@
 		73EAF86C259B116A00E80205 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				73C3990A25A4BF0000AC084C /* Common.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		E5BEF0A106C4B7CD441870E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B86AECCF4DABA4F673C39404 /* Pods_CMTV.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,9 +379,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 733659B3259A16BE00A604B7 /* Build configuration list for PBXNativeTarget "CMTV" */;
 			buildPhases = (
+				B23E6675191B102FD327DC26 /* [CP] Check Pods Manifest.lock */,
 				7336599B259A16BD00A604B7 /* Sources */,
 				7336599C259A16BD00A604B7 /* Frameworks */,
 				7336599D259A16BD00A604B7 /* Resources */,
+				5CBE92483C6E9CEC877AD7DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,6 +433,7 @@
 			files = (
 				733659E3259A2F5D00A604B7 /* Rank.storyboard in Resources */,
 				733659DB259A2D3000A604B7 /* Main.storyboard in Resources */,
+				73C3990525A4A2A100AC084C /* types.plist in Resources */,
 				733659AF259A16BE00A604B7 /* LaunchScreen.storyboard in Resources */,
 				733659AC259A16BE00A604B7 /* Assets.xcassets in Resources */,
 				733659DF259A2F3000A604B7 /* Home.storyboard in Resources */,
@@ -370,16 +444,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CBE92483C6E9CEC877AD7DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CMTV/Pods-CMTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CMTV/Pods-CMTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CMTV/Pods-CMTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B23E6675191B102FD327DC26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CMTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7336599B259A16BD00A604B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C398F725A4985300AC084C /* JCPageView.swift in Sources */,
+				73C398F625A4985300AC084C /* JCTitleStyle.swift in Sources */,
+				73C398F925A4985300AC084C /* JCTitleView.swift in Sources */,
 				73EAF869259ACF2600E80205 /* NavigationViewController.swift in Sources */,
+				73C3990B25A4BF0000AC084C /* Common.swift in Sources */,
 				733659A3259A16BD00A604B7 /* AppDelegate.swift in Sources */,
 				73EAF863259ACD6400E80205 /* HomeViewController.swift in Sources */,
+				73C3990825A4A3FE00AC084C /* HomeType.swift in Sources */,
+				73F606E925A5767A0097741A /* AnchorModel.swift in Sources */,
+				73C398F825A4985300AC084C /* JCContentView.swift in Sources */,
+				73C398EF25A4980E00AC084C /* JCWaterfallLayout.swift in Sources */,
 				73EAF866259ACE6A00E80205 /* RankViewController.swift in Sources */,
-				73EAF86E259B118F00E80205 /* UIColor+Extension.swift in Sources */,
+				73C398FD25A4988700AC084C /* UIColor+Extension.swift in Sources */,
+				73F606E625A558FF0097741A /* AnchorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +680,7 @@
 		};
 		733659B4259A16BE00A604B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA2E90A87E7D0CB54C677D8D /* Pods-CMTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -575,6 +701,7 @@
 		};
 		733659B5259A16BE00A604B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A1930553F839B02F5B1DBD /* Pods-CMTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
